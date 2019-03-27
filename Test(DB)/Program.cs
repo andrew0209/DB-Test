@@ -32,8 +32,8 @@ namespace Test_DB_
                 while (reader.Read())
                 {
                     Console.WriteLine(
-                        string.Format("Brand: {0}, Model: {1}",
-                        reader["brand"], reader["model"]));
+                        string.Format("Brand: {0}, Model: {1}, Number: {2}",
+                        reader["brand"], reader["model"], reader["number"]));
                 }
 
                 Console.ReadLine();
